@@ -36,11 +36,11 @@ class Timer:
         self.start_time_ns = 0
 
 
-    def time_callable(self, callable: callable, *args) -> int:
+    def time_callable(self, callable: callable, arg) -> int:
         """Retorna o tempo em nanosegundos da execução de um callable."""
         try:
             self.start()
-            callable(args)
+            callable(arg)
             return self.stop()
         except Exception as e: 
             print(e)
