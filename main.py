@@ -1,6 +1,9 @@
 from SortingAlgorithms.bubbleSort import *
 from SortingAlgorithms.quickSortAntigo import *
 from SortingAlgorithms.quickSort import *
+from SortingAlgorithms.insertionSort import *
+from SortingAlgorithms.selectionSort import *
+from SortingAlgorithms.radixSort import *
 from Modules.test import *
 import sys
 import random
@@ -22,5 +25,13 @@ obj.export_results_to_csv()
 # print(Test().execute_tests(QuickSort(), lista, 500))
 # print(Test().execute_tests(BubbleSort(), lista, 500))
 # print(Test().execute_tests(QuickSortAlt(), lista, 500))
+# print(Test().execute_tests(InsertionSort(), lista, 500))
+# print(Test().execute_tests(SelectionSort(), lista, 500))
+# print(Test().execute_tests(RadixSort(), lista, 500))
+
+
+
+
+
 
 
