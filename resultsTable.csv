@@ -1,4 +1,23 @@
  ,QuickSort ,1000 ,1 ,1.986111 ,1.986111
 douglas-Inspiron-3583,QuickSort,1000,1,1.837076,1.837076
+<<<<<<< HEAD
 douglas-Inspiron-3583,QuickSort,1000,100,256.779528,2.567795
 douglas-Inspiron-3583,BubbleSort,1000,100,8.271739,0.082717
+=======
+Eduardo,QuickSort,1000,1,0.66627,0.66627
+Eduardo,QuickSort,1000,1,0.667801,0.667801
+Eduardo,QuickSort,1000,1,0.680893,0.680893
+Eduardo,QuickSort,1000,1,0.745018,0.745018
+Eduardo,QuickSort,1000,1,0.900896,0.900896
+Eduardo,QuickSort,1000,1,0.710184,0.710184
+Eduardo,QuickSort,1000,1,0.638146,0.638146
+Eduardo,QuickSort,1000,1,0.716208,0.716208
+Eduardo,QuickSort,1000,1,0.650837,0.650837
+Eduardo,QuickSort,1000,1,0.678138,0.678138
+Eduardo,QuickSort,1000,1,0.642476,0.642476
+Eduardo,QuickSort,1000,1,0.852162,0.852162
+Eduardo,QuickSort,1000,1,1.013472,1.013472
+Eduardo,QuickSort,1000,1,0.695865,0.695865
+Eduardo,QuickSort,1000,1,0.796446,0.796446
+Eduardo,QuickSort,1000,1,0.770941,0.770941
+>>>>>>> 32437356f10a7d214af3da9890b6a88c7ff45544
