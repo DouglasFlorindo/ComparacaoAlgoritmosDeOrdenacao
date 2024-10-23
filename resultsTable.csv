@@ -18,4 +18,8 @@ Eduardo,QuickSort,1000,1,1.013472,1.013472
 Eduardo,QuickSort,1000,1,0.695865,0.695865
 Eduardo,QuickSort,1000,1,0.796446,0.796446
 Eduardo,QuickSort,1000,1,0.770941,0.770941
-douglas-Inspiron-3583,BubbleSort,10000,100,77.459495,0.774594
+douglas-Inspiron-3583,BubbleSort,100000,1,810847.765246,810847.765246
+douglas-Inspiron-3583,SelectionSort,100000,1,354988.915986,354988.915986
+douglas-Inspiron-3583,RadixSort,100000,1,317.80103,317.80103
+douglas-Inspiron-3583,QuickSort,100000,1,252.811901,252.811901
+douglas-Inspiron-3583,InsertionSort,100000,1,433451.36449,433451.36449

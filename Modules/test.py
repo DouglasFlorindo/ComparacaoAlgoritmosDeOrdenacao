@@ -42,11 +42,12 @@ class Test:
             self.clear_results()
             self.algorithm = sorting_algorithm.__class__.__name__
             self.data_pre = data
-            self.data_post = sorting_algorithm(data)
+            # self.data_post = sorting_algorithm(data)
             self.data_quantity = len(data)
             self.tests_quantity = num_iterations
-
+            
             for i in range(num_iterations):
+                print("Executando teste nº" + str(i + 1) + "...")
                 execution_time_ns: int = self.time_test(sorting_algorithm, data)
                 self.execution_times_ns.append(execution_time_ns)
 

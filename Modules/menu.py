@@ -20,7 +20,7 @@ class Menu:
     def get_data(self, file_name: str) -> list:
         try:
             raw: str = ''
-            with open('data.txt') as f:
+            with open(file_name) as f:
                 raw = f.read()
                 f.close()
             raw_list: list = raw.split(',')
@@ -38,9 +38,8 @@ class Menu:
             current_test: Test = Test()
             current_algorithm: callable = self.menu_algorithm()
             num_data: int = self.menu_data()
-            num_tests: int = self.menu_iterations()
-
-            current_test.execute_tests(current_algorithm, self.data_list[:num_data], num_tests)
+            # num_tests: int = self.menu_iterations()
+            current_test.execute_tests(current_algorithm, self.data_list[:num_data])
             current_test.export_results_to_csv()
             print(current_test.get_relevant_results())
             
