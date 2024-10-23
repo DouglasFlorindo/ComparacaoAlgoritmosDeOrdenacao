@@ -62,9 +62,9 @@ class Test:
     
     def clear_results(self):
         """Limpa os resultados armazenadobj = Test()
-obj.execute_tests(QuickSort(), lista, 1)
-print(obj.get_relevant_results())
-obj.export_results_to_csv()os."""
+        obj.execute_tests(QuickSort(), lista, 1)
+        print(obj.get_relevant_results())
+        obj.export_results_to_csv()os."""
         self.algorithm: callable = None
         self.data_pre: list = []
         self.data_post: list = []
