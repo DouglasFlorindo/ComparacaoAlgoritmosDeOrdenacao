@@ -5,5 +5,5 @@ sys.setrecursionlimit(1000000) # Aumenta o limite de recursividade (a quantidade
 # 1K 10K 50K 80K 100K
 
 
-menu = Menu()
-menu()
+main_menu = Menu()
+main_menu()
