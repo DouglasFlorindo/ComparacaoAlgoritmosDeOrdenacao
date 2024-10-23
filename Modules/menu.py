@@ -31,18 +31,35 @@ class Menu:
         except Exception as e:
             print(e)
             return []
+    
+
+    def execute_test(self, sorting_algorithm: callable, num_data: int = -1, num_iterations: int = 1) -> None:
+        try:
+            if num_data >= 0:
+                current_test: Test = Test()
+                current_test.execute_tests(sorting_algorithm, self.data_list[:num_data])
+                current_test.export_results_to_csv()
+                print(current_test.get_relevant_results())    
+            else:
+                num_data_list = [10**3, 10**4, 10**4 * 5, 10**4 * 8, 10**5]
+                
+                for num in num_data_list:
+                    print("\nExecutando teste com " + str(num) + " dados...")
+                    current_test: Test = Test()
+                    current_test.execute_tests(sorting_algorithm, self.data_list[:num])
+                    current_test.export_results_to_csv()
+                    print(current_test.get_relevant_results())
+        except Exception as e:
+            print(e)
         
-    def main_menu(self):
+        
+    def main_menu(self) -> None:
         while True:
-            print(self.separator)
-            current_test: Test = Test()
+            print("\n" + self.separator)
             current_algorithm: callable = self.menu_algorithm()
             num_data: int = self.menu_data()
             # num_tests: int = self.menu_iterations()
-            current_test.execute_tests(current_algorithm, self.data_list[:num_data])
-            current_test.export_results_to_csv()
-            print(current_test.get_relevant_results())
-            
+            self.execute_test(current_algorithm, num_data)
     
 
     def menu_algorithm(self) -> callable:
@@ -74,6 +91,7 @@ class Menu:
         print("3) 50K")
         print("4) 80K")
         print("5) 100K")
+        print("6) Todos em sequência")
         match int(input()):
             case 1:
                 return 10**3
@@ -85,6 +103,8 @@ class Menu:
                 return 10**4 * 8
             case 5:
                 return 10**5
+            case 6:
+                return -1
             case __default__:
                 return 0
 
