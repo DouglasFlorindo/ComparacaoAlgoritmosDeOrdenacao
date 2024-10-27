@@ -31,11 +31,6 @@ class Timer:
         return elapsed_time_ns
 
 
-    def reset_timer(self):
-        """Reseta o timer."""
-        self.start_time_ns = 0
-
-
     def time_callable(self, callable: callable, arg) -> int:
         """Retorna o tempo em nanosegundos da execução de um callable."""
         try:
@@ -45,3 +40,8 @@ class Timer:
         except Exception as e: 
             print(e)
             return -1
+        
+
+    def reset_timer(self):
+        """Reseta o timer."""
+        self.start_time_ns = 0    

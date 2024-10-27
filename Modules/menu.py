@@ -13,6 +13,7 @@ class Menu:
         self.separator: str = "==============="
 
 
+
     def __call__(self) -> None:
         self.main_menu()
         
@@ -58,7 +59,6 @@ class Menu:
             print("\n" + self.separator)
             current_algorithm: callable = self.menu_algorithm()
             num_data: int = self.menu_data()
-            # num_tests: int = self.menu_iterations()
             self.execute_test(current_algorithm, num_data)
     
 
@@ -107,10 +107,3 @@ class Menu:
                 return -1
             case __default__:
                 return 0
-
-
-    def menu_iterations(self) -> int:
-        print("Número de iterações: ")
-        return int(input())
-
-
