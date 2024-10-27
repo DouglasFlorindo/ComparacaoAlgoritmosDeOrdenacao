@@ -1,5 +1,4 @@
 from SortingAlgorithms.bubbleSort import *
-from SortingAlgorithms.quickSortAntigo import *
 from SortingAlgorithms.quickSort import *
 from SortingAlgorithms.insertionSort import *
 from SortingAlgorithms.selectionSort import *
